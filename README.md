@@ -92,7 +92,7 @@ Before running the application, ensure the following:
 
 ## Streamlit App Glimpse
 
-![What is the capital of India?](git_img/general.png)
+![What is the capital of India?](git_img/general_prompt.png)
 ![Send a WhatsApp message to +910123456789 and attach file wisdom.jpg](git_img/whatsapp_prompt.png)
 ![WhatsApp](git_img/whatsapp.png)
 ![Send an email to sample@gmail.com and attach file wisdom.jpg](git_img/gmail_prompt.png)
