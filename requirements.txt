@@ -1,0 +1,14 @@
+# Langchain 
+langchain
+langchain-core
+langchain-ollama
+langchain-groq
+
+# Load environment variables
+python-dotenv
+
+# WhatsApp messaging
+pywhatkit
+
+# Web Application
+streamlit
