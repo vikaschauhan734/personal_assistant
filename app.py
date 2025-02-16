@@ -9,12 +9,12 @@ from langchain_core.tools import StructuredTool, ToolException
 from pydantic import BaseModel, Field
 import pywhatkit
 from langchain.agents import AgentType, initialize_agent
-#from langchain_ollama.llms import OllamaLLM
-from langchain_groq import ChatGroq
+from langchain_ollama.llms import OllamaLLM
+#from langchain_groq import ChatGroq
 import streamlit as st
 
 # Load environment variables
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+#os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 smtp_password=os.getenv("SMTP_PASSWORD")
 sender=os.getenv("EMAIL_ADDRESS")
 
@@ -77,8 +77,8 @@ whatsapp_sender = StructuredTool.from_function(func=send_whatapp,
 # Initialize LLM agent
 st.title("Personal Assistant")
 
-llm = ChatGroq(model_name="Llama3-8b-8192", temperature=0)
-#llm = OllamaLLM(model="deepseek-r1:8b", temperature=0)
+#llm = ChatGroq(model_name="Llama3-8b-8192", temperature=0)
+llm = OllamaLLM(model="deepseek-r1:8b", temperature=0)
 
 
 input = st.chat_input("How can I help you?")
