@@ -90,6 +90,10 @@ Before running the application, ensure the following:
 - **Multi-agent decision-making** to determine the best communication method.
 - **User-friendly interface** built with Streamlit.
 
+## Video Explanation
+
+This is the provided video explanation [link](https://youtu.be/b_LjpVpukQA).
+
 ## Streamlit App Glimpse
 
 ![What is the capital of India?](git_img/general_prompt.png)
